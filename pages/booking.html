@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourTube Book Trips</title>
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./../assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="./../assets/css/booking.css">
+    
+</head>
+
+<body>
+  <header id="header">
+    <div><a href="../index.html"><img src="../assets/img/tt-logo.webp" style="height: 35px;" alt="logo"></a></div>
+    <div><ul id="navbar" >
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./explore.html">Explore</a></li>
+      <li ><a href="./mytrips.html">My trips</a></li>
+      <li><a href="./support.html">Support</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./aboutus.html">About Us</a></li>
+    </ul></div>
+    <div>
+      <button class="btns"><a href="./tourlogin.html" style="color: white;">Login</a></button>
+      <button class="btns" style="background-color: red;"><a href="./tourreg.html" style="color: white;">Register</a></button>
+    </div>
+  </header>
+
+      <h1 style="color: white; text-align: center;">Booking Portal</h1>
+      <form style="font-size: x-large;" onsubmit="bookTrip()">
+        <div id="main-div">
+         <div id="left-panel" class="box">
+          <div>
+            <input type="text" id="name_box" name="name" placeholder="Enter Name" size="larger" pattern="[A-Za-z]{3,15}" title="Please enter a valid name, name should'nt contain any number, name should have atleast 3 characters" required>
+            <input type="email" id="email_box" name="email" placeholder="Enter Email" pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}" required>
+            <br>
+            <select id="ccode_box" name="ccode">
+            <option value="+91" >+91</option>
+            <option value="+1">+1</option>
+            <option value="+33">+33</option>
+            <option value="+972">+972</option>
+            <option value="+49">+49</option>
+            <option value="+61">+61</option>
+            <option value="+44">+44</option>
+            </select>
+          <input type="number" id="phno_box" name="phno" placeholder="Phone Number" min="6000000000" max="9999999999" required>
+          <input type="checkbox" name="t&c" id="checkbox" style="height: 20px; width: 20px;" required>
+          <label style="font-size: medium;" for="t&c">Accept to the Terms and Conditions of TourTube.</label>
+          </div>
+        
+        <div id="avatar-div"><img src="./../assets/img/avatar.png" id="avatar" style="width: 130px; height: auto;" alt="">
+        <input type="file" name="avatar" id="file">
+      </div>
+      </div>
+        <div id="right-panel" class="box">
+          <input type="number" max="10" min="1" id="nAdults" placeholder="No. of Adults" style="width: 240px;" required>
+          <input type="number" max="5" min="0" id="nChildren" placeholder="No. of Children" style="width: 240px;" required>
+          <p style="font-size:medium; color: red;">Your touring price depends on the Number of days.</p>
+          <label for="date-of-start" style="font-size: medium; color: black;">Date of Boarding &nbsp;</label><input type="date" name="date-of-start" min="2022-01-08" id="board-date" required> <br>
+          <label for="date-of-end" style="font-size: medium; color: black;">Date of ending &nbsp;</label><input type="date" name="date-of-end" id="end-date" required>
+          
+        </div>
+        </div>
+        <br>
+        <div class="box" >
+          Payment Option: 
+          <select name="pay" id="pay-select" onchange="paySelection()">
+            <option value="card">Card</option>
+            <option value="upi">UPI</option>
+            <option value="net-banking">Net Banking</option>
+          </select>
+          <br> <br>
+          <div id="payment-div">
+
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <button class="form-btns" type="submit" style="background-color: greenyellow; margin-left: 80px;"><span style="color: black;">Submit</span></button>
+          <button class="form-btns" type="reset" style="background-color: gray;" ><span>Reset</span></button>
+          <button class="form-btns" type="button" style="background-color: crimson;"><span><a href="../index.html">Cancel</a></span></button>
+        </div>
+        
+        </form>
+  <script type="text/javascript" src="./../assets/js/booking.js"></script>
+</body>
+
+</html>

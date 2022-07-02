@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico">
+    <title>TourTube Egypt</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      body {
+        background: linear-gradient(to bottom, #090f25 0%, #27317e 100%);
+        background-position: center;
+        height: 100;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        margin-left: 15px;
+        color: white;
+      }
+      img {
+        height: 250px;
+        width: auto;
+        border-radius: 15px;
+        margin: 10px;
+      }
+      #main-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 4fr;
+        grid-gap: 15px;
+      }
+      #main-div > div{
+        background-color: black;
+        border-radius: 5px;
+        padding-top: 30px;
+      }
+      #main-div > div > img{
+        height: 200px;
+      }
+      .btn-booking{
+        height: 40px;
+        width: 100px;
+        background-color: blue;
+        border: none; 
+        border-radius: 10px;
+        float: right;
+        color: white;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1 style="color: white; font-family: sans-serif; text-align: center;">TourTube</h1>
+    <h1 style="float: left;">Egypt:</h1> 
+    <button onclick="bookPlace('Maldives')" class="btn-booking">Book now</button>
+    <br> <br> <br> <br>
+    <div>
+      <img src="../assets/img/egypt1.jpg" alt=""/>
+      <img src="../assets/img/egypt2.jpg" alt=""/>
+      <img src="../assets/img/Egypt.jpeg" alt=""/>
+    </div>
+    <p>
+      <strong>Egypt</strong>, a country linking northeast Africa with the Middle East, dates to
+      the time of the pharaohs. Millennia-old monuments sit along the fertile
+      Nile River Valley, including Giza's colossal Pyramids and Great Sphinx as
+      well as Luxor's hieroglyph-lined Karnak Temple and Valley of the Kings
+      tombs. The capital, Cairo, is home to Ottoman landmarks like Muhammad Ali
+      Mosque and the Egyptian Museum, a trove of antiquities.
+    </p>
+    <div>
+      <h1 style="font-size: large">Location on Map:</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290596.256804185!2d26.36892070964523!3d26.844358609460112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2sin!4v1636861347738!5m2!1sen!2sin"
+        width="1000" height="450" style="border: 0; border-radius: 10px;" allowfullscreen="" loading="lazy" title="maps"></iframe>
+    </div>
+    <h1>Top things to do in Egypt:</h1>
+    <div id="main-div">
+      <div>1. Pyramids of Giza:</div>
+      <div><img src="../assets/img/giza.jpg" alt=""/></div>
+      <div>The last surviving of the Seven Wonders of the Ancient World, the
+        Pyramids of Giza are one of the world's most recognizable landmarks.
+        Having awed travelers down through the ages, these tombs of the
+        Pharaohs Cheops (Khufu), Chephren (Khafre), and Mycerinus (Menkaure),
+        guarded by the enigmatic Sphinx, are usually top of most visitor's
+        lists of tourist attractions to see in Egypt and often the first sight
+        they head to after landing. Today, sitting on the desert edge of
+        Cairo's sprawl, these megalithic memorials to dead pharaohs are still
+        as wondrous a sight as they ever were and an undeniable highlight of
+        any Egypt trip.</div>
+      <div>2. Luxor's Karnak Temple and the Valley of the Kings</div>
+      <div><img src="../assets/img/luxor-karnak-temple.jpg" alt="" /></div>
+      <div>Famed for the Valley of the Kings, Karnak Temple, and the Memorial
+        Temple of Hatshepsut, the Nile-side town of Luxor in Upper Egypt has a
+        glut of tourist attractions. This is ancient Thebes, power base of the
+        New Kingdom pharaohs, and home to more sights than most can see on one
+        visit. While Luxor's East Bank holds the modern city, with its vibrant
+        souq; the two temples of Karnak and Luxor; and the museum; the West
+        Bank's lush farmland and barren cliffs are where the vast majority of
+        Luxor's tourist attractions sit, with so many tomb and temple sights
+        that it has been called the biggest open-air museum in the world.
+        Spend a few days here exploring the colorful wall art of the tombs and
+        gazing in awe at the colossal columns in the temples, and you'll see
+        why Luxor continues to fascinate historians and archaeologists.</div>
+      <div>3. Cruising the Nile</div>
+      <div><img src="../assets/img/Nile.jpg" alt=""/></div>
+      <div>Egypt is defined by the Nile. For many visitors, a multi-day cruise
+        upon this famed waterway that saw the rise of the Pharaonic era is a
+        highlight of their Egypt trip. Cruising the Nile is also the most
+        relaxing way to see the temples that stud the banks of the river on
+        the route between Luxor and Aswan, plus sunrise and sunset over the
+        date-palm-studded river banks, backed by sand dunes, is one of Egypt's
+        most tranquil vistas. The two famous sights on a Nile Cruise are the
+        Temple of Kom Ombo and Edfu's Temple of Horus, where all the big
+        cruise boats stop. If you'd prefer a less crowded and slower
+        experience, though, and don't mind "roughing it" a bit, you can also
+        cruise the Nile by felucca (Egypt's traditional lateen-sailed wooden
+        boats), which also allows you to create your own itinerary. The vast
+        amount of cruise boat itineraries depart from either Luxor and Aswan,
+        but feluccas can only be chartered for multi-day trips from Aswan.</div>
+      <div>4. Aswan</div>
+      <div><img src="../assets/img/aswan.jpg" alt=""/></div>
+      <div>Egypt's most tranquil town is Aswan, set upon the winding curves of
+        the Nile. Backed by orange-hued dunes, this is the perfect place to
+        stop and unwind for a few days and soak up the chilled-out atmosphere.
+        Take the river ferry across to Elephantine Island and stroll the
+        colorful streets of the Nubian villages. Ride a camel to the desert
+        monastery of St. Simeon on the East Bank. Or just drink endless cups
+        of tea on one of the riverboat restaurants, while watching the
+        lateen-sailed feluccas drift past. Make sure to jump aboard a felucca
+        at sunset to sail around Aswan's islands. This is by far, Aswan's most
+        popular activity and the most relaxing way to take in the local
+        sights. There are plenty of historic sites here and numerous temples
+        nearby, including Philae Temple on its island, but one of Aswan's most
+        popular things to do is simply kicking back and watching the river
+        life go by.</div>
+      <div>5. Abu Simbel</div>
+      <div><img src="../assets/img/abu-simbel.jpg" alt=""/></div>
+      <div>Even in a country festooned with temples, Abu Simbel is something
+        special. This is Ramses II's great temple, adorned with colossal
+        statuary standing guard outside, and with an interior sumptuously
+        decorated with wall paintings. Justly famous for its megalithic
+        proportions, Abu Simbel is also known for the incredible engineering
+        feat carried out by UNESCO in the 1960s, which saw the entire temple
+        moved from its original setting to save it from disappearing under the
+        rising water of the Aswan dam. Today, exploring Abu Simbel is just as
+        much about admiring the triumph of this international effort to save
+        the temple complex as it is about gaping in wonder at Ramses II's
+        awe-inspiring building works, itself.</div>
+      <div>6. Diving the Red Sea</div>
+      <div><img src="../assets/img/red-sea.jpg" alt=""/></div>
+      <div>Below the Red Sea's surface is another world as fascinating as the
+        temples and tombs on land. The coral reefs of the Red Sea are renowned
+        among scuba divers for both the soft corals on display and the vast
+        amount of sea life, ranging from colorful reef fish and nudibranchs,
+        to sharks, dolphins, turtles, rays, and even dugongs. For divers, the
+        most famous town to base yourself in is Sharm el-Sheikh on the Sinai
+        Peninsula, closest to the reefs of Ras Mohammed National Park, as well
+        as the reefs of the Straits of Tiran. To dive the sites of the Straits
+        of Gubal head to Hurghada or El Gouna on the Red Sea coast, while
+        advanced divers should check out the resort of Marsa Alam, the nearest
+        base for diving Egypt's "deep south" dive sites.
+
+        <br /><br />
+        As well as fish life and coral, the Red Sea is a major wreck-diving
+        destination. The most famous wreck is the Thistlegorm, a British WWII
+        cargo ship that was on its way to resupply Allied troops when it was
+        bombed by the Germans in 1941. Today the site is regarded by divers as
+        one of the top five wreck dives in the world due to the vast cargo of
+        cars, motorbikes, and WWII memorabilia that can be seen both scattered
+        on the sea bed around the wreck and inside the ship itself. Dive boat
+        trips to the wreck are organized from both Sharm el-Sheikh and
+        Hurghada.</div>
+      <div>7. Explore Islamic Cairo</div>
+      <div><img src="../assets/img/islamic-cairo.jpg" alt=""/></div>
+      <div>The atmospheric, narrow lanes of the capital's Islamic Cairo district
+        are crammed full of mosques, madrassas (Islamic schools of learning),
+        and monuments dating from the Fatimid through to the Mameluke eras.
+        This is where you'll find the labyrinth shopping souk of Khan
+        el-Khalili, where coppersmiths and artisans still have their tiny
+        workshops, and stalls are laden with ceramics, textiles, spice, and
+        perfume. Surrounding the market is a muddle of roads, home to some of
+        the most beautiful preserved architecture of the old Islamic empires.
+        There is a wealth of history here to explore. Visit Al-Azhar Mosque
+        and the dazzling Sultan Hassan Mosque, and make sure you climb to the
+        roof of the ancient medieval gate of Bab Zuweila for the best
+        minaret-speckled panoramas across the district.</div>
+      <div>8. South Sinai's Beach Life</div>
+      <div><img src="../assets/img/south-siani-beach.jpg" alt=""/></div>
+      <div>Egypt's South Sinai region, on the Sinai Peninsula, offers a beach for
+        every type of traveler. Sharm el-Sheikh is a European-style resort
+        town packed full of luxury hotels, international restaurants, and bags
+        of entertainment options. A favorite with Europeans on winter-sun
+        vacations, many of the resorts here cater to families on one- or
+        two-week sun-and-sand breaks. Dahab is a low-key beach town with a
+        budget-traveler heart, which is just as much about desert excursions
+        and adventures as the sea. It's particularly known for its cheap
+        dive-package deals and for its lagoon beach area where windsurfing and
+        kitesurfing are the top activity. Up the coast, between the port town
+        of Nuweiba and the border town of Taba, are the bamboo hut retreats
+        that offer complete get-away-from-it-all respites from life and
+        back-to-basics beach life.</div>
+      <div>9. Saqqara</div>
+      <div><img src="../assets/img/saqqara.jpg" alt=""></div>
+      <div>Everyone's heard of Giza's Pyramids, but they're not the only pyramids
+        Egypt has up its sleeve. Day-tripping distance from Cairo, Saqqara is
+        a vast necropolis of tombs and pyramids that was utilized during every
+        era of pharaonic rule. It's best known for its Old Kingdom Step
+        Pyramid, which shows how the architects of Ancient Egypt advanced
+        their engineering knowledge to finally create a true pyramid shape.
+        There's much more to see beyond the Step Pyramid, though, with some of
+        the surrounding tombs, such as the Mastaba of Ti, showcasing some of
+        the finest tomb paintings you'll see in the country. Nearby, the
+        pyramid site of Dahshur is home to the Red Pyramid and Bent Pyramid,
+        which should be included on any Saqqara visit.</div>
+      <div>10. Egyptian Museum</div>
+      <div><img src="../assets/img/egyptian-museum.jpg" alt=""/></div>
+      <div>A treasure trove of the Pharaonic world, Cairo's Egyptian Museum is
+        one of the world's great museum collections. The faded pink mansion in
+        downtown Cairo is home to a dazzling amount of exhibits. It's a
+        higgledy-piggledy place, with little labeling on offer and
+        chronological order severely lacking, but that's half of its
+        old-school charm. The museum's two highlight collections are the haul
+        of golden treasures unearthed from Tutankhamen's tomb in the Valley of
+        the Kings and the fascinating Royal Mummies exhibit room. Every corner
+        you turn here, though, is home to some wonderful piece of ancient art
+        or statuary that would form a highlight of any other museum.</div>
+    </div>
+    <script>
+      function bookPlace(place) {
+        const tourDestin = JSON.stringify(place);
+        localStorage.setItem('tour-place', tourDestin);
+        window.location.href = "./../pages/booking.html";
+      }
+    </script>
+  
+  </body>
+</html>

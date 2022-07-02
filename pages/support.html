@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/home.css" />
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico">
+    <title>TourTube Support</title>
+    <style>
+      
+      #inp {
+        background-color: rgb(204, 204, 204);
+        color: rgb(0, 0, 0);
+        width: 600px;
+        height: 40px;
+        border-radius: 5px;
+        outline: none;
+      }
+      
+      .btn {
+        color: white;
+        background-color: blue;
+        height: 35px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+      }
+      #feedback{
+        margin-top: 10px;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 10px;
+        margin-left: 20%;
+      }
+      #feedback-input{
+        background-color: rgb(179, 179, 179);
+        border: none;
+        border-radius: 5px;
+        color: black;
+        font-size: large;
+        outline: none;
+      }
+      #fb-div{
+        text-align: left;
+        background-color: rgb(211, 211, 211);
+        margin: 4px;
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 3px -3px 9px rgb(216, 216, 216);
+      }
+      #time-div{
+        float: right;
+      }
+    </style>
+  </head>
+  <body align="center">
+    <header id="header">
+      <div><a href="../index.html"><img src="../assets/img/tt-logo.webp" style="height: 35px;" alt=""></a></div>
+      <div><ul id="navbar" >
+        <li><a href="../index.html">Home</a></li>
+        <li ><a href="./explore.html">Explore</a></li>
+        <li ><a href="./mytrips.html">My trips</a></li>
+        <li class="active"><a href="./support.html">Support</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./aboutus.html">About Us</a></li>
+      </ul></div>
+      <div>
+        
+      </div>
+    </header>
+
+    <div class="support">
+      <h1 style="font-size: large">How can we help?</h1>
+      <input type="search" id="inp" placeholder="Search queries here" />
+      <button class="btn">Search</button>
+    </div>
+    <div id="feedback">
+      <div id="feedback-area"> Feedbacks:</div> <hr>
+      <h3>Send us Your Feedback:</h3>
+      <div id="feedback-write-area">
+        <form onsubmit="submitFeedback(event)">
+        <textarea id="feedback-input" cols="89" rows="4"> </textarea> 
+        <br> 
+        <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="../assets/js/support.js"></script>
+  </body>
+</html>

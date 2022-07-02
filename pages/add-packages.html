@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico">
+    <link rel="stylesheet" href="./../assets/css/loginpage.css">
+    <title>Add Trip Packages</title>
+</head>
+<body align="center">
+<h1>Add Tour Packages (Admin)</h1>
+<form onsubmit="addPackage()">
+    <input type="text" name="placeName" id="place-name" placeholder="Enter Package Name" pattern="[A-Za-z]{2, 20}" title="Please enter a valid Package Name" required><br> <br>
+    Preview Image: <br><img alt="img" id="img" src="./../assets/img/cover.png" style="height: 200px;"> <br>
+    Select Cover Image:
+    <input type="file" name="cover-image" id="file" title="Please select file for Cover Image" required> <br>
+    <textarea name="content" id="content" cols="50" rows="10" placeholder="Enter cover paragraph" style="border-radius: 5px;" required></textarea> <br>
+    <button type="submit" class="button" style="width: auto; background-color: blue;">Add package</button>
+    <a href="./../index.html"><button type="button" class="button" style="background-color: red;">Cancel</button></a>
+</form>
+</body>
+<script src="../assets/js/add-package.js"></script>
+</html>

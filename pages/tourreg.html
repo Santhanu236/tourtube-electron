@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../assets/css/tourreg.css">
+  <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico">
+  <title>TourTube</title>
+
+</head>
+<body align="center">
+<h1 style="color: white;">TourTube</h1>
+<div>
+<h1 style=" color:white; font-family: sans-serif;">TourTube Registration</h1>
+
+
+<form id="reg-div" onsubmit="submitHandler(event)">
+  <div>Name:</div>
+  <div><input type="text" id="name_box" name="name" placeholder="Enter name" size="larger" pattern="[A-Za-z]{3,15}" title="Please enter Valid Name, Name should'nt contain numbers, Name should have atleast 3 characters" required></div>
+  <div>Email:</div>
+  <div><input type="email" id="email_box" name="email" placeholder="Enter email" pattern="[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}" required></div>
+  <div>Phone Number:</div>
+  <div><select id="ccode_box" name="ccode" required>
+    <option value="+91">+91</option>
+    <option value="+1">+1</option>
+    <option value="+33">+33</option>
+    <option value="+972">+972</option>
+    <option value="+49">+49</option>
+    <option value="+61">+61</option>
+    <option value="+44">+44</option>
+  </select>
+  <input type="number" id="phno_box" name="phno" placeholder="Phone Number" min="6000000000" max="9999999999" required></div>
+  <div>New Password:</div>
+
+  <div><input type="password" name="passwd" placeholder="New Password" id="enter_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password should contain atlest 8 characters, 1 uppercase, 1 lowercase, 1 number or symbol" required></div>
+  <div>Confirm Password:</div>
+  <div><input type="password" name="passwd" placeholder="Confirm Pasword" id="confirm_pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password should contain atlest 8 characters, 1 uppercase, 1 lowercase, 1 number or symbol" required></div>
+  <div></div>
+  <div><input type="checkbox" name="checkbox" id="checkbox" onchange="showPass()" style="height: 20px; width: 20px;">Show Password</div>
+  <div>Date of Birth:</div>
+  <div><input type="date" id="dob_box" max='2011-01-01' min="1960-01-01" required></div>
+  <div><button class="btns" type="submit" style="background-color: blue;"><span>Submit</span></button></div>
+  <div><button class="btns" type="button" style="background-color: crimson; color: white;"><span><a href="../index.html">Cancel</a></span></button></div>
+
+</form>
+
+
+</div>
+<script src="../assets/js/reg.js"></script>
+</body>
+
+</html>

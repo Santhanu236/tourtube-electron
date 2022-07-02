@@ -1,0 +1,12 @@
+body {
+    background: linear-gradient(to bottom, #090f25 0%, #27317e 100%);
+    font-family: sans-serif;
+    height: 100;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    color: white;
+    text-align: center;
+    
+  }

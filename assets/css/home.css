@@ -1,0 +1,239 @@
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(to bottom, #090f25 0%, #27317e 100%);
+  background-position: center;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+.btns{
+  background-color: blue;
+  height: 35px; width: 65px;
+  border: none; border-radius: 10px;
+  color: white;
+}
+.btns-booking{
+  background-color: blue;
+  height: 45px; width: 100px;
+  border: none; border-radius: 10px;
+  color: white;
+  float: right;
+}
+#header{
+  margin-top: -20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto auto auto;
+  background-color: transparent;
+}
+#header > div{
+  justify-content: center;
+}
+#search-img{
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: -13px;
+  background-color: blue;
+  padding: 3px;
+  margin-left: -75px;
+}
+#navbar {
+  list-style-type: none;
+ 
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+#navbar li a:hover {
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+}
+#navbar li.active a {
+  background-color: white;
+  color: blue;
+  border-radius: 20px;
+}
+#widget{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  
+}
+.widget-images {
+  height: 50px;
+}
+#widget > div{
+  background-color: white;
+  padding: 25px; 
+  border-radius: 5px; 
+  margin-bottom: 2px; 
+  height: 75px;
+}
+#username-box{
+  font-size: x-large;
+  background-color: white;
+  padding: 2px 5px;
+  border-radius: 50px;
+  margin: 10px;
+  width: 150px;
+  /* position: absolute;
+  top: 10px; right: 10px; */
+}
+#tour-content-heading{
+  background-color: white;
+  border-radius: 5px;
+  justify-content: center;
+}
+#tour-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+#tour-content > div{
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: fit-content;
+}
+#tour-content > div > div > a > img{
+  border-radius: 5px;
+  height: 250px;
+  transition: 1s;
+  justify-self: center;
+}
+#tour-content > div > div {
+  width: 450px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#tour-content  div div  :hover .tpi{
+  transition: 0.5s;
+  opacity: 40%;
+  transform: scale(1.2);
+  filter: blur(4px) ;
+}
+#tour-content  div  div  :hover .tph{
+  font-size: xx-large;
+  margin-bottom: -40px;
+ 
+  transition: 0.5s;
+  z-index: 2;
+}
+#tour-content div div a .tph{
+  font-size: large;  
+  transition: 0.5s; 
+}
+
+#trip-ideas-heading{
+  background-color: white;
+  border-radius: 5px;
+}
+#trip-ideas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+#trip-ideas > div{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+#infimg{
+  position: absolute;
+  top: 160px; right: 20px;
+  width: 500px; height: 145px;
+  border-radius: 20px;
+}
+
+
+#scroll_top {
+  position: fixed;
+  bottom: 10px; right: 10px;
+  border-radius: 100%;
+  height: 50px; width: 50px;
+  background-color: blueviolet; 
+  border: none;
+}
+
+#searchbar {
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+#search-bar {
+  border-radius: 5px;
+  height: 40px;
+  outline: none
+}
+#icon {
+  height: 30px;
+}
+input {
+  width: 800px;
+  background-color: white;
+  border: none;
+  color: black;
+  height: 5px;
+  font-size: medium;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#pop-up{
+  position: absolute;
+  top: 2%;
+  background-color: white;
+  padding: 1% 4% ;
+  font-size: x-large;
+  border-radius: 5px;
+  box-shadow: 1px 1px 100px black;
+  width: 10%;
+  left: 40%;
+}
+
+
+#abus {
+  color: black;
+  background-color: white;
+ 
+  padding: 20px;
+  border-radius: 15px;
+  height: auto;
+  width: 800px;
+  margin-left: 19%;
+  margin-top: 11%;
+  box-shadow: 20px 20px 10px black;
+}
+
+.support {
+  color: black;
+  background-color: white;
+
+  border-radius: 15px;
+  width: 800px;
+  height: auto;
+  margin-left: 20%;
+  margin-top: 6%;
+  padding: 20px;
+}

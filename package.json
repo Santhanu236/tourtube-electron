@@ -1,0 +1,29 @@
+{
+  "name": "tourtube-electron",
+  "version": "1.0.0",
+  "description": "tourtube",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fwsa-batch2/santhanu.suruliram__web_project.git"
+  },
+  "keywords": [
+    "tourtube"
+  ],
+  "author": "sanboi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fwsa-batch2/santhanu.suruliram__web_project/issues"
+  },
+  "homepage": "https://github.com/fwsa-batch2/santhanu.suruliram__web_project#readme",
+  "dependencies": {
+    "script": "^0.1.4",
+    "scripts": "^0.1.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.5.1"
+  }
+}

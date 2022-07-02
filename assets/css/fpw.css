@@ -1,0 +1,67 @@
+*{
+  font-family: sans-serif;
+  color: white;
+}
+body {
+  background: linear-gradient(to bottom, #090f25 0%, #27317e 100%);
+  background-position: center;
+  height: 100;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+  
+}
+
+
+.inp{
+  -moz-appearance: textfield;
+  margin-top: 5px;
+  height: 50px;
+  width: 300px;
+  font-size: large;
+  background-color: white;
+  text-align: center;
+
+  border: none;
+  border-radius: 5px;
+
+  color: black;
+}
+.button {
+  border-radius: 10px;
+  height: 35px;
+  width: 100px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

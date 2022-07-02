@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/loginpage.css" />
+  
+  <title>TourTube Login</title>
+</head>
+
+<body align="center">
+  
+  <h1>TourTube Login</h1>
+ 
+  <form align="center"  style="font-family: sans-serif; font-size: xx-large;color: white;" onsubmit="submitHandler(event)" id="log-form">
+    <label for="name">User Email:</label><input type="text" id="email_box" style="margin: 20px" name="email"
+      placeholder="Enter Email" size="larger" required /><br />
+    <label for="passwd">Password:</label><input type="password" style="margin: 20px" name="passwd" id="password"
+      placeholder="Enter Password" required minlength="8"/>  <br>
+      <input type="checkbox" name="showpw" onchange="show_pass()" id="show-pass"> <label for="showpw" style="font-size: medium;">Show Password</label>
+       
+      <div id="err_msg" style="color: red; font-size: small;"></div>
+    <div>
+      <p style="font-size: medium;">
+        Forgot password? Click<a href="./tour-forgotpw.html" style="color: cyan; margin-left: 10px">here</a>
+      </p>
+      <p style="font-size: medium;">
+        New User? Register<a href="./tourreg.html" style="color: cyan; margin-left: 10px">here</a>
+      </p>
+    </div>
+
+    <button class="button" type="submit" style="background-color: blue; cursor: pointer" >
+      <a> <span>Login</span></a>
+    </button>
+    <button class="button" type="button" style="background-color: crimson; cursor: pointer">
+      <a href="../index.html"><span>Cancel</span></a>
+    </button>
+  </form>
+  <button type="button" class="button" style="background-color: blueviolet; width: 170px; position: absolute; bottom: 10px; right: 10px;" id="admin-btn" onclick="adminLogin()">Login as Admin</button>
+  <script src="./../assets/js/login.js"></script>
+</body>
+
+</html>

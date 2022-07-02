@@ -1,0 +1,66 @@
+body {
+  background: linear-gradient(to bottom, #090f25 0%, #27317e 100%);
+  font-family: sans-serif;
+  background-position: center;
+  margin-top: 100px;
+  height: 100;
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+
+}
+input {
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 250px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.button {
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+#show-pass {
+  height: 20px; width: 20px;
+}

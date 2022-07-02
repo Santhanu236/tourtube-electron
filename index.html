@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/home.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+  <style>
+    #tour-content>div>div {
+      float: left;
+    }
+  </style>
+  <title>TourTube Home</title>
+</head>
+
+<body align="center">
+  <div id="pop-section"></div>
+  <header id="header">
+    <div>
+      <a href="./index.html"><img src="./assets/img/tt-logo.webp" style="height: 35px" alt="" /></a>
+    </div>
+    <div>
+      <ul id="navbar">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="./pages/explore.html">Explore</a></li>
+        <li><a href="./pages/mytrips.html">My trips</a></li>
+        <li><a href="./pages/support.html">Support</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
+        <li><a href="./pages/aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+    <div id="btn-area">
+      <button class="btns" id="login">
+        <a href="./pages/tourlogin.html" style="color: white">Login</a>
+      </button>
+      <button class="btns" id="register" style="background-color: red">
+        <a href="./pages/tourreg.html" style="color: white">Register</a>
+      </button>
+    </div>
+  </header>
+
+  <div id="searchbar">
+    <form onsubmit="filterFunc(event)">
+    <input type="text" id="search-bar" placeholder="Search Places Here" />
+    <button style="border: none; background-color: transparent">
+      <img src="./assets/img/loupe.png" id="search-img" alt="search" />
+    </button>
+  </form>
+  </div>
+
+  <div id="widget">
+    <div>
+      <div id="imgdiv"></div>
+      <div id="msg"></div>
+    </div>
+    <div style="background-color: rgb(248, 88, 88)">
+      <a href="./pages/flights.html"><img src="./assets/img/airplane.png" class="widget-images" alt="" />
+        <h3 style="color: white">Flights</h3>
+      </a>
+    </div>
+    <div style="background-color: rgb(65, 65, 252)">
+      <a href="./pages/hotels.html"><img src="./assets/img/hotel.png" class="widget-images" alt="" />
+        <h3 style="color: white">Hotels</h3>
+      </a>
+    </div>
+    <div style="background-color: rgb(92, 252, 92)">
+      <a href="./pages/packages.html">
+        <img src="./assets/img/holiday-packages.png" class="widget-images" alt="" />
+        <h3 style="color: black">Holiday Packages</h3>
+      </a>
+    </div>
+  </div>
+
+  <div id="tour-content-heading">
+    <h2>Trending Tour Packages</h2>
+  </div>
+  <div id="tour-content">
+    <div>
+      <div><a href="./pages/Maldives.html"><h1 class="tph">Maldives</h1><img class="tpi" src="./assets/img/maldives1.jpg" alt="" /></a>
+      </div>
+      <div></div>
+      <br>
+      <div>
+        The Republic of the <strong>Maldives</strong> is an island nation in the
+      Indian Ocean. It is composed of multiple atolls which are made up of a
+      total of 1196 islands, and is located in the continent of Asia. The
+      chain of islands is to the south-west of India and Sri Lanka and
+      stretches over 871 km.
+      </div>
+      <br />
+      <div>⭐⭐⭐⭐⭐ 5</div>
+      <button type="button" class="btns-booking" onclick="bookPlace('Maldives')">
+        Book now
+      </button>
+    </div>
+    <div>
+      <div><a href="./pages/hawaii.html"><h1 class="tph">Hawaii</h1><img class="tpi" src="./assets/img/hawaii1.jpeg" alt="" /></a></div>
+      
+      <div><strong>Hawaii</strong> is a state in the Western United States located
+        in the Pacific Ocean about 2,000 miles from the U.S. mainland. It is the
+        only state outside North America, the only state that is an archipelago,
+        and the only state in the tropics.</div> <br />
+      <div>⭐⭐⭐⭐⭐ 5</div>
+      <button type="button" class="btns-booking" onclick="bookPlace('Hawaii')">
+        Book now
+      </button>
+    </div>
+
+    
+
+    <div>
+      <div><a href="./pages/Egypt.html"><h1 class="tph">Egypt</h1><img src="./assets/img/Egypt.jpeg" alt="" class="tpi" /></a></div>
+      <br />
+      <div>
+        <strong>Egypt</strong>, a country linking northeast Africa with the
+      Middle East, dates to the time of the pharaohs. Millennia-old monuments
+      sit along the fertile Nile River Valley, including Giza's colossal
+      Pyramids and Great Sphinx as well as Luxor's hieroglyph-lined Karnak
+      Temple and Valley of the Kings tombs. The capital, Cairo, is home to
+      Ottoman landmarks like Muhammad Ali Mosque and the Egyptian Museum, a
+      trove of antiquities.
+      </div> <br />
+      <div>⭐⭐⭐⭐ 4</div>
+      <button type="button" class="btns-booking" onclick="bookPlace('Egypt')">
+        Book now
+      </button>
+    </div>
+    <div>
+      <div><a href="./pages/Kerala.html"><h1 class="tph">Kerala</h1><img class="tpi" src="./assets/img/kerala.jpg" alt="" /></a></div>
+      <br>
+      <strong>Kerala</strong>, a state on the Malabar Coast of India.[13] It
+      was formed on 1 November 1956, following the passage of the States
+      Reorganisation Act, by combining Malayalam-speaking regions of the
+      erstwhile regions of Cochin, Malabar, South Canara, and Travancore.
+      <br />
+      <div>⭐⭐⭐⭐ 4</div>
+      <button type="button" class="btns-booking" onclick="bookPlace('Kerala')">
+        Book now
+      </button>
+    </div>
+    <div>
+      <div><a href="./pages/Chinese_temple.html"><h1 class="tph">China</h1><img src="./assets/img/chinese_temple.jpg" alt="" class="tpi"/></a></div>
+      
+      <div>
+        <strong>China</strong>, officially the People's Republic of China, is a
+      country in East Asia. It is the world's most populous country, with a
+      population of more than 1.4 billion. China spans five geographical time
+      zones and borders 14 different countries, the second most of any country
+      in the world after Russia. <br />
+      </div>
+      <div>⭐⭐⭐ 3</div>
+      <button type="button" class="btns-booking" onclick="bookPlace('China')">
+        Book now
+      </button>
+    </div>
+  </div>
+
+  <button id="scroll_top">
+    <a href="#header" style="font-size: xxx-large"><img src="./assets/img/arrow_up.png"
+        style="height: 30px; width: 35px" alt="" /></a>
+  </button>
+
+  <div id="trip-ideas-heading">
+    <h1>Trip ideas</h1>
+  </div>
+  <div id="trip-ideas">
+    <div>
+      <img src="./assets/img/trip-idea-beach.jpg" alt="" />
+      <h3><strong>1.</strong>Beach Places</h3>
+      <br />
+      <p>
+        Imagine strolling on a pristine beach and relishing incredible seafood
+        without a worry in the world! Does that sound like your dream
+        vacation? Plan a holiday to a beach destination and enjoy adrenalin
+        pumping sports activities with your loved ones.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-hill.jpg" alt="" />
+      <h3><strong>2.</strong>Hill Stations</h3>
+      <p>
+        Answer the call of the mountains with MakeMyTrip’s specially curated
+        holiday ideas. Treat the nature lover in you to the serene bliss of
+        lofty hills and explore hidden gems on an epic adventure.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-historical.webp" alt="" />
+      <h3><strong>3.</strong> Historical Places</h3>
+      <p>
+        Explore this list of heritage destinations and plan a holiday to visit
+        historical monuments in UNESCO-identified heritage sites. Marvel at
+        the stories and legacies of majestic dynasties while you walk through
+        their historic lanes.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-honeymoon.jpg" alt="" />
+      <h3><strong>4.</strong>Honemoon Places</h3>
+      <p>
+        Your honeymoon has to be the most memorable vacation of your life!
+        Choose from a variety of pocket-friendly destinations from solitary
+        beaches, picturesque hills, snow-clad mountains, relaxing yet exotic
+        resorts to adventurous excursions.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-weekends.webp" alt="" />
+      <h3><strong>5.</strong>Weekend Getaways</h3>
+      <p>
+        Recharge after a hectic week’s work with an idyllic trip over the
+        weekend. Experience peace at a resort nestled in nature’s lap or feel
+        your heart race with adventure sports. Go ahead, choose the perfect
+        weekend hotspot from this list.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-romantic.jpg" alt="" />
+      <h3><strong>6.</strong>Romatic Places</h3>
+      <p>
+        Scroll through our list of romantic tourism destinations and plan a
+        passionate getaway with your special someone to surreal valleys,
+        snow-clad mountains, sun-soaked beaches or adventurous wildlife
+        trails. Escape to a quieter location and rejuvenate in a romantic
+        atmosphere.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-holy.jpg" alt="" />
+      <h3><strong>7.</strong>Holy Places</h3>
+      <p>
+        Take a break from your busy routine and seek divine blessings at
+        revered pilgrimages for some much needed peace. Whisper a wish or
+        murmur a prayer of gratitude, and let your next trip be a truly
+        memorable one!
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-restaurants.jpg" alt="" />
+      <h3><strong>8.</strong>Restaurants</h3>
+      <p>
+        Pamper your taste buds with flavours of different regions. Go on
+        adventures to not just taste but also experience a truly authentic
+        culinary journey. Explore the tiniest of lanes & largest of markets on
+        your next food trail.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-adventure.jpg" alt="" />
+      <h3><strong>9.</strong>Adventure Places</h3>
+      <p>
+        Explore adventurous destinations with exciting deals and challenging
+        activities. Spike up your adrenaline and boost your confidence with
+        thrilling treks, camping, water sports, scuba diving, rafting, bungee
+        jumping, sky diving and many more off-beat activities.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-trekking.png" alt="" />
+      <h3><strong>10.</strong>Trekking Places</h3>
+      <p>
+        Replace the boredom of your daily routine with an epic adventure. Be
+        it soaring in the sky or diving in the sea, explore the best ideas for
+        a thrilling trip. It's time to feel the adrenaline racing through your
+        veins!
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-peacefull.webp" alt="" />
+      <h3><strong>11.</strong>Peaceful Places</h3>
+      <p>
+        Escape the daily routine and humdrum of city life with a relaxing trip
+        to a serene destination. Rejuvenate your body and mind with
+        therapeutic spa treatments, soothing beach walks, flavourful drinks,
+        scrumptious meals and morning meditations.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+    <div>
+      <img src="./assets/img/trip-idea-international.jpg" alt="" />
+      <h3><strong>12.</strong>International Destinations</h3>
+      <p>
+        Want to learn more about new cultures and new countries? Then this is
+        for the globetrotter in you! Make your next trip truly memorable with
+        these specially curated ideas and feast your senses on jaw-dropping
+        international landscapes and mouthwatering food.
+      </p>
+      <button class="btns-booking">Explore</button>
+    </div>
+  </div>
+  <script>
+    function timelyMsg() {
+      const date = new Date();
+      const hours = date.getHours();
+      if (hours >= 5 && hours < 12) {
+        document.getElementById("imgdiv").innerHTML =
+          '<img src="./assets/img/sunrise.png" class="widget-images">';
+        document.getElementById("msg").innerHTML = "<h2>Good Morning!</h2>";
+      } else if (hours >= 12 && hours < 17) {
+        document.getElementById("imgdiv").innerHTML =
+          '<img src="./assets/img/mid-day.png" class="widget-images">';
+        document.getElementById("msg").innerHTML = "<h2>Good Afternoon!</h2>";
+      } else if (hours >= 17 && hours < 20) {
+        document.getElementById("imgdiv").innerHTML =
+          '<img src="./assets/img/sunset.png" class="widget-images">';
+        document.getElementById("msg").innerHTML = "<h2>Good Evening!</h2>";
+      } else {
+        document.getElementById("imgdiv").innerHTML =
+          '<img src="./assets/img/night.png" class="widget-images">';
+        document.getElementById("msg").innerHTML = "<h2>Good Night!</h2>";
+      }
+    }
+    timelyMsg();
+  </script>
+  <script src="./main.js"></script>
+
+
+
+
+</body>
+
+</html>

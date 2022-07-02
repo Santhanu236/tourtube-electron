@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/home.css" />
+    <style>
+      a{
+        text-decoration: none;
+      }
+      #contact-heading{
+        height: 40px;
+        background-color: white;
+        text-align: center;
+        font-size: xx-large;
+        border-radius: 5px;
+        margin-top: 8%;
+      }
+      #main-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 10px;
+        grid-column-gap: 10px;
+      }
+      #main-div > a > div{
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.4s;
+        padding: 10px;
+        text-align: center;
+        height: 150px;
+      }
+      #main-div > a > div:hover{
+        background-color: rgb(243, 76, 76);
+      }
+      #main-div > a > div > img{
+        height: 50px;
+      }
+    </style>
+    <title>TourTube Contact</title>
+  </head>
+  <body>
+    <header id="header">
+      <div><a href="../index.html"><img src="../assets/img/tt-logo.webp" style="height: 35px;" alt=""></a></div>
+      <div><ul id="navbar" >
+        <li><a href="../index.html">Home</a></li>
+        <li ><a href="./explore.html">Explore</a></li>
+        <li ><a href="./mytrips.html">My trips</a></li>
+        <li><a href="./support.html">Support</a></li>
+        <li class="active"><a href="./contact.html">Contact</a></li>
+        <li><a href="./aboutus.html">About Us</a></li>
+      </ul></div>
+      <div>
+        
+      </div>
+    </header>
+<div id="contact-heading">Contact Us:</div>
+<div id="main-div">
+  <a href="mailto: tourtubeinc@gmail.com">
+    <div>
+      <img src="../assets/img/email.png" alt="" />
+      <p>Email</p>
+      <p style="color: blue">contact@tourtube.com</p>
+    </div>
+  </a>
+  <a href="#">
+    <div>
+      <img src="../assets/img/phone.png" alt="" />
+      <p>Phone (Customer Support)</p>
+      <p style="color: blue">9876505432</p>
+    </div>
+  </a>
+  <a href="https://twitter.com/" style="text-decoration: none">
+    <div>
+      <img src="../assets/img/twitter-brands.svg" alt=""/>
+      <p>Twitter</p>
+      <p style="color: blue;">Tourtube</p>
+    </div>
+  </a>
+  <a href="https://facebook.com" style="text-decoration: none">
+    <div>
+      <img src="../assets/img/facebook-brands.svg" alt=""/>
+      <p>Facebook</p>
+      <p style="color:blue;">tourtube</p>
+    </div>
+  </a>
+  <a href="https://instagram.com" style="text-decoration: none">
+    <div>
+      <img src="../assets/img/instagram-brands.svg" alt=""/>
+      <p>Instagram</p>
+      <p style="color:blue;">tourtube</p>
+    </div>
+  </a>
+</div>
+</body>
+</html>

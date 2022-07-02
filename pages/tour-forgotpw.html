@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/fpw.css" />
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico">
+    <title>TourTube Reset Password</title>
+  <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  <script type="text/javascript" src="./../assets/js/fpw.js">
+    
+  </script>
+</head>
+  
+<body align = "center">
+  <h1> TourTube</h1>
+    <h1>TourTube Password Reset</h1>
+  <form method="post" id="form">
+    <div>
+      <p style=" font-size: medium;">Enter your registered Email </p>
+      <input id="email" type="email" placeholder="Enter Email" class="inp" required/>
+      <input type="button" value="Send" onclick="fpwProtocol()" style="background-color: blue;" class="button" />
+    </div>
+</form>
+  
+    <p id="msg1" style="color: red;"></p>
+    
+    <input id="code" type="number" placeholder="Enter 6 digit code" class="inp" minlength="6" maxlength="6" disabled required />
+    
+    <p style="color: red;" id="msg2"></p>
+    <div>
+      <button class="button" onclick="mainFunc()" style="background-color: blue"><span>Submit</span></button>
+    <button class="button" onclick="sendEmail()" style="background-color: brown"> <span>Resend</span> </button>  <div style="color: greenyellow;" id="success"></div>
+    </div>
+    
+    
+    <div>
+      <input type="password" id="enter-pass" class="inp" placeholder="New Password" minlength="8" disabled>  
+      <input type="password" id="confirm-pass" class="inp" placeholder="Confirm Password" minlength="8" disabled> <br>
+      <input type="checkbox" id="show-pass" onchange="show_pass()"> Show Password
+      <p style="color: red;" id="msg3"></p>
+    </div>
+    <div>
+      <button type="button" class="button" onclick="updatePass()" style="background-color: green; width: auto;">Update Password</button>
+      <a href="./../index.html"><button type="button" class="button" style="background-color: crimson;">Cancel</button></a>
+    </div>
+    
+</body>
+  
+</html>
